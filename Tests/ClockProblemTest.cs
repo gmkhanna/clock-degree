@@ -5,24 +5,17 @@ namespace ClockProblem
 {
   public class ClockProblemTest
   {
-    [Fact]
-    public void Test_MinuteHand_Angle()
-    {
-      float minuteHand = 55.0F;
-      float returnedInt = ClockProblem.CalculateMinutesAngle(minuteHand);
-
-      Assert.Equal(330.0F, returnedInt);
-    }
 
     [Fact]
-    public void Test_HourHand_Angle()
+    public void Test_Angle()
     {
       float hourHand = 3.0F;
       float minuteHand = 25.0F;
+      ClockProblem.CalculateAngles(hourHand, minuteHand);
 
-      float returnedInt = ClockProblem.CalculateHourAngle(hourHand, minuteHand);
+      float calculatedAngle = ClockProblem.GetHourAngle();
 
-      Assert.Equal(102.5F, returnedInt);
+      Assert.Equal(102.5F, calculatedAngle);
     }
   }
 }
