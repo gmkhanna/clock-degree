@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Xunit;
+using System;
 
 namespace ClockProblem
 {
@@ -13,9 +14,9 @@ namespace ClockProblem
       float minuteHand = 25.0F;
       ClockProblem.CalculateAngles(hourHand, minuteHand);
 
-      float calculatedAngle = ClockProblem.GetHourAngle();
+      float calculatedAngle = ClockProblem.GetFinalAngle();
 
-      Assert.Equal(102.5F, calculatedAngle);
+      Assert.Equal(47.5F, calculatedAngle);
     }
   }
 }

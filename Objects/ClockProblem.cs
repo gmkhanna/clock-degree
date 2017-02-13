@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 namespace ClockProblem
 {
@@ -26,7 +27,19 @@ namespace ClockProblem
       return _minuteAngle;
     }
 
+    public static float GetFinalAngle()
+    {
+      float angleTest1 = Math.Abs(_hourAngle - _minuteAngle);
+      float angleTest2 = Math.Abs(_minuteAngle - _hourAngle);
 
-
+      if(angleTest1 > angleTest2)
+      {
+        return angleTest2;
+      }
+      else
+      {
+        return angleTest1;
+      }
+    }
   }
 }
