@@ -5,16 +5,32 @@ namespace ClockProblem
 {
   public class ClockProblem
   {
+    private static float _hour;
+    private static float _minute;
     private static float _hourAngle;
     private static float _minuteAngle;
 
-    public static void CalculateAngles(float hours, float minutes)
+    public ClockProblem(float parsedTime)
     {
-      float hourAngle = hours * 30.0F;
+      if(parsedTime > 1200)
+      {
+        parsedTime -= 1200;
+      }
+      else
+      {
+
+      }
+      float minutes = parsedTime % 100;
+      float hour = (parsedTime - minutes) / 100;
+
+      _hour = hour;
+      _minute = minutes;
+
+      float hourAngle = hour * 30.0F;
       float minuteAddition = minutes * 0.5F;
 
       _hourAngle = hourAngle + minuteAddition;
-      _minuteAngle = minutes * 6.0F;
+      _minuteAngle = _minute * 6.0F;
     }
 
     public static float GetHourAngle()
