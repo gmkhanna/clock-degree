@@ -1,0 +1,94 @@
+body {
+  background-color: #2b2a2b;
+  color: white;
+}
+
+button {
+  color: #e900ff;
+  height: 50px;
+  width: 400px;
+  float: right;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+.jumbotron {
+  background-color: #2b2a2b;
+  color: white;
+  border-bottom: 1px solid #e900ff;
+  border-right: 1px solid #e900ff;
+  margin-top: 5%;
+}
+
+.form {
+  width: 900px;
+  height: 400px;
+  font-size: 200px;
+  color: black;
+  border-radius: 2px;
+  background-color: #419347;
+}
+
+.forms {
+  margin-top: 10%;
+  margin-right: 10%;
+}
+
+
+.clock {
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: orange;
+  z-index: +10;
+}
+.clock-hour {
+  background-color: black;
+  width: 0px;
+  height: 0px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.middle-of-clock {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  z-index: +2;
+  background-color: black;
+  float: left;
+  border-radius: 50%;
+  bottom: 24px;
+  right: 25px;
+}
+
+.clock-minutes {
+  background-color: purple;
+  width: 0px;
+  height: 0px;
+  position: relative;
+  top: 40%;
+  left: 50%;
+}
+
+.hour-hand {
+  position: relative;
+  width: 200px;
+  height: 15px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-top: 1px solid #e900ff;
+  bottom: 7px;
+}
+
+.minute-hand {
+  position: relative;
+  width: 300px;
+  height: 7px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border-top: 1px solid #e900ff;
+  bottom: 3px;
+}

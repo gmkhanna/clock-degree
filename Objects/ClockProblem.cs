@@ -31,6 +31,7 @@ namespace ClockProblem
 
       _hourAngle = hourAngle + minuteAddition;
       _minuteAngle = _minute * 6.0F;
+
     }
 
     public static float GetHourAngle()
@@ -56,6 +57,11 @@ namespace ClockProblem
       {
         return angleTest1;
       }
+    }
+
+    public string GetHourDeg()
+    {
+      return _hourAngle + "deg";
     }
   }
 }

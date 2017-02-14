@@ -1,9 +1,13 @@
-@Layout{
-  Layout = "Shared/_Layout.cshtml"
+@{
+  Layout = "Shared/_Layout.cshtml";
 }
 
-<form class="" action="/submit" method="post">
-  <label for="time">Enter Time:</label>
-  <input type="time" name="time">
-  <button type="submit" name="button">Submit</button>
-</form>
+<div class="row">
+  <div class="forms">
+    <form class="" action="/submit" method="post">
+      <label for="time"><h1>Enter Time:</h1></label>
+      <input class="form" type="time" name="time" required>
+      <button class="btn" type="submit" name="button">Submit</button>
+    </form>
+  </div>
+</div>

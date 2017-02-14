@@ -1,1 +1,21 @@
-@Model
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+<h1>Calculated Angle Between Hour and Minute Hand:</h1>
+<h1>@Model["finalAngle"] degrees</h1>
+
+<div class="clock">
+  <div class="clock-hour" value='@Model["hourAngle"]'>
+  <div class="hour-hand">
+
+  </div>
+  </div>
+
+  <div class="clock-minutes" value='@Model["minuteAngle"]'>
+    <div class="middle-of-clock">
+
+    </div>
+    <div class="minute-hand">
+    </div>
+  </div>
+</div>
